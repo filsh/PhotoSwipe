@@ -113,12 +113,12 @@ var _historyUpdateTimeout,
 		}
 		var newHash = _initialHash + '&'  +  'gid=' + _options.galleryUID + '&' + 'pid=' + pid;
 
-		if(!_historyChanged) {
+		/*if(!_historyChanged) {
 			if(_windowLoc.hash.indexOf(newHash) === -1) {
 				_urlChangedOnce = true;
 			}
 			// first time - add new hisory record, then just replace
-		}
+		}*/
 
 		var newURL = _windowLoc.href.split('#')[0] + '#' +  newHash;
 
